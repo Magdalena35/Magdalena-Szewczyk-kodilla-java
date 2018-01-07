@@ -1,15 +1,13 @@
 package com.kodilla.stream;
 
-import com.kodilla.stream.beautifier.PoemDecorator;
-import com.kodilla.stream.beautifier.PoemBeautifier;
-
+import com.kodilla.stream.lambda.Executor;
+import com.kodilla.stream.lambda.Processor;
 
 public class StreamMain {
     public static void main (String[] args){
-        PoemBeautifier poemBeautifier = new PoemBeautifier();
-//      poemBeautifier.beautify("Jagna ma 5 lat","ABC",
-
-//        poemBeautifier.beautify("Jagna", "2013",
+        Processor processor = new Processor();
+        Executor codeToExecute = () ->System.out.println("This is an example text.");
+        processor.execute(codeToExecute);
 
 
 }
