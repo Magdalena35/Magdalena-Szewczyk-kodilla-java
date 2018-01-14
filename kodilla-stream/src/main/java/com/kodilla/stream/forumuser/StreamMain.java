@@ -12,7 +12,7 @@ public class StreamMain {
         Forum forum = new Forum();
         forum.getList().stream()
                 .filter((ForumUser)->ForumUser.sex!='F')
-                .filter((ForumUser)->ForumUser.calculateAge() < 20)
+                .filter((ForumUser)->ForumUser.calculateAge() > 20)
                 .filter((ForumUser)->ForumUser.PostNumber >=1)
                 .collect(Collectors.toMap(ForumUser::getUserID,ForumUser->ForumUser));
         System.out.println(forum);

@@ -1,5 +1,8 @@
 package com.kodilla.stream.forumuser;
 import com.kodilla.stream.forumuser.ForumUser;
+import com.kodilla.testing.shape.Circle;
+import com.kodilla.testing.shape.Shape;
+import com.kodilla.testing.shape.ShapeCollector;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -24,9 +27,6 @@ public final class Forum {
         return new ArrayList<ForumUser>(theList);
     }
 }
-
-
-
 
 
 
