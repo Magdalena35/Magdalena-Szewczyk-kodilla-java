@@ -12,7 +12,7 @@ public class ShapeCollectorTestSuite {
 
     public void testAddFigure() {
         ShapeCollector shapecollector = new ShapeCollector();
-        Shape circle = new Circle("Circle",140);
+        Shape circle = new Circle("Circle",10);
         shapecollector.addFigure(circle);
         Assert.assertEquals(1,shapecollector.getFiguresQuantity());
     }
@@ -21,7 +21,7 @@ public class ShapeCollectorTestSuite {
 
     public void testRemoveFigure() {
         ShapeCollector shapecollector = new ShapeCollector();
-        Shape circle = new Circle("Circle", 140);
+        Shape circle = new Circle("Circle", 10);
         shapecollector.addFigure(circle);
         boolean result = shapecollector.removeFigure(circle);
         Assert.assertTrue(result);
@@ -31,7 +31,7 @@ public class ShapeCollectorTestSuite {
 
     public void testGetFigure() {
         ShapeCollector shapecollector = new ShapeCollector();
-        Shape circle = new Circle("Circle",140);
+        Shape circle = new Circle("Circle",10);
         shapecollector.addFigure(circle);
         Shape retrievedFigure;
         retrievedFigure = shapecollector.getFigure(0);
