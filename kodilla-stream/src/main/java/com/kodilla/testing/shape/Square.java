@@ -4,17 +4,17 @@ import com.kodilla.testing.shape.Shape;
 public class Square implements Shape {
 
     String ShapeName;
-    int Field;
+    int a;
 
-    public Square(String ShapeName, int Field){
+    public Square(String ShapeName, int a){
         this.ShapeName=ShapeName;
-        this.Field=Field;
+        this.a=a;
     }
 
     public String getShapeName(){
         return ShapeName;
     }
-    public int getField(){
-        return Field;
+    public double getField(){
+        return a*a;
     }
 }

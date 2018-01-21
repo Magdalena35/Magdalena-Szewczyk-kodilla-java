@@ -3,11 +3,13 @@ package com.kodilla.testing.shape;
 public class Circle implements Shape{
 
     String ShapeName;
-    int Field;
+    double r;
+    private double Field;
 
-    public Circle(String ShapeName, int Field){
+
+    public Circle(String ShapeName, int r){
      this.ShapeName=ShapeName;
-     this.Field=Field;
+     this.r = r;
 
 
     }
@@ -18,8 +20,8 @@ public class Circle implements Shape{
 
         }
 
-        public int getField() {
-        return Field;
+        public double getField() {
+        return (3.14*r*r);
 
         }
 
